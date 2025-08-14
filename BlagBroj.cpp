@@ -5,44 +5,44 @@
 // // Пример: 99 500 - Влез
 // // Излез: 200 202
 //
-// #include<iostream>
-// using namespace std;
-//
-// int main() {
-//    int m, n, blagBroj;
-//    cin>>m>>n;
-//
-//    for (m;m<=n;m++) {
-//       int tmp = m;
-//       bool flag = true;
-//
-//       // for (tmp; tmp > 0; tmp = tmp/10 ) {
-//       //    int cifra = tmp%10;
-//       //    if (cifra % 2 != 0) {
-//       //       flag = false;
-//       //       break;
-//       //    }
-//       // }
-//
-//       while (tmp > 0) {
-//          int cifra = tmp%10;
-//          if (cifra % 2 != 0) {
-//             flag = false;
-//             break;
-//          }
-//          tmp /= 10;
-//       }
-//
-//       if (flag) {
-//          blagBroj = m;
-//          break;
-//       }
-//    }
-//
-//    if (blagBroj) {
-//       cout<<blagBroj<<endl;
-//    }
-//    else {
-//       cout<<"No solution";
-//    }
-// }
+#include<iostream>
+using namespace std;
+
+int main() {
+   int m, n, blagBroj;
+   cin>>m>>n;
+
+   for (m;m<=n;m++) {
+      int tmp = m;
+      bool flag = true;
+
+      // for (tmp; tmp > 0; tmp = tmp/10 ) {
+      //    int cifra = tmp%10;
+      //    if (cifra % 2 != 0) {
+      //       flag = false;
+      //       break;
+      //    }
+      // }
+
+      while (tmp > 0) {
+         int cifra = tmp%10;
+         if (cifra % 2 != 0) {
+            flag = false;
+            break;
+         }
+         tmp /= 10;
+      }
+
+      if (flag) {
+         blagBroj = m;
+         break;
+      }
+   }
+
+   if (blagBroj) {
+      cout<<blagBroj<<endl;
+   }
+   else {
+      cout<<"No solution";
+   }
+}
