@@ -44,7 +44,7 @@ int main() {
                 golemi++;
             }
 
-            if (i + j == n-1) {
+            if ((i + j == n-1) && (mat[i][j] >= 'a' && mat[i][j] <= 'z')) {
                 mali++;
             }
         }
